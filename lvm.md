@@ -31,35 +31,35 @@ Não se perde performance quando usamos LVM. Pode haver um ganho de performance 
 
 
 ### COMANDOS
-> wipefs -a <partição> = limpa a partição
+> ```wipefs -a <partição>``` limpa a partição
 
-> cfdisk <partição> = programa particionador
+> ```cfdisk <partição>``` programa particionador
 
-> partprobe <diretorio> = recarrega a tabela de partições
+> ```partprobe <diretorio>``` recarrega a tabela de partições
 
-> pvcreate = cria volume físico (instalar pacote lvm2)
+> ```pvcreate``` cria volume físico (instalar pacote lvm2)
 
-> pvdisplay ou pvs = mostra os volumes fisicos
+> ```pvdisplay``` ou ```pvs``` mostra os volumes fisicos
 
-> vgcreate <nome_grupo> <partição> = cria grupo de volumes
+> ```vgcreate <nome_grupo> <partição>``` cria grupo de volumes
 
-> vgdisplay ou vgs = lista grupo de volumes
+> ```vgdisplay``` ou ```vgs``` lista grupo de volumes
 
-> lvcreate = cria volume lógico
+> ```lvcreate``` cria volume lógico
 
-> lvextend -L +200M <volume> = altera o tamanaho do volume logico
+> ```lvextend -L +200M <volume>``` altera o tamanaho do volume logico
 
-> resize2fs = faz o resize do volume escolhido
+> ```resize2fs``` faz o resize do volume escolhido
 
-> vgextend = expande o tamanho do grupo de volumes
+> ```vgextend``` expande o tamanho do grupo de volumes
 
-> mount <partição> <diretorio> = monta volumes
+> ```mount <partição> <diretorio>```  monta volumes
 
-> mkfs.ext4 <partição> = formata partição
+> ```mkfs.ext4 <partição>``` = formata partição
 
-> du -hs <diretorio> = verifica o volume ocupado pelo diretorio
+> ```du -hs <diretorio>``` verifica o volume ocupado pelo diretorio
 
-> lsblk = lista volumes em formato de arvore
+> ```lsblk``` lista volumes em formato de arvore
 
 
 ### DICAS
