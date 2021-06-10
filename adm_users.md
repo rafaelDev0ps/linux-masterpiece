@@ -60,6 +60,27 @@ Para expirar a senha do user basta passar a flag `-e`.
 Para deletar a senha do user usamos `-d`.
 
 
+Para definir a senha para um grupo usamos o comando `gpasswd`:
+
+> ```gpasswd nome-do-grupo```
+
+Para adicionar um user a um grupo criado usamos a flag `-a` do comando `gpasswd`:
+
+> ```gpasswd -a nome-do-user nome-do-grupo```
+
+Para adicionar um administrador de um grupo usamos a flag `-A` do comando `gpasswd`:
+
+> ```gpasswd -A nome-do-user nome-do-grupo```
+
+Podemos verificar se um user é admin de um grupo olhando o arquivo /etc/gshadow. O arquivo tem a seguinte formatação:
+
+[nome-grupo] : [hash-senha] : [nome-admin] : [nome-users]
+
+Para remover um usuário de um grupo usamos a flag `-d` do comando `gpasswd`:
+
+> ```gpasswd -d nome-do-user nome-do-grupo```
+
+
 Para mudar de user basta usar o comando `su`:
 
 > ```su - nome-do-user```
