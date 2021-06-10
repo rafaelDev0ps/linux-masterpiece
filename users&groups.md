@@ -1,4 +1,6 @@
-# Administracao de Usuarios
+# Administracao de Grupos e Usuários
+
+## Users
 
 O comando para adicionar users e ```adduser```
 Esse comando tem um arquivo de configuracao em /etc/adduser.conf
@@ -31,6 +33,23 @@ Podemos remover um usuario usamos o comando `deluser` ou `userdel`
 
 > ```deluser --remove-home girus```
 
+Para modificar os dados de um user usamos o comando `usermod`. Podemos modificar tudo de um user desde o uid até os comentários do user.
+
+Podemos usar o comando `chfn` (change full name) para alterar informações do usuário também. Assim como o `chfn` temos o `chsh` para mudar o shell do usuário.
+
+Para definir a senha de um user usamos o comando `passwd`:
+
+> ```passwd nome-do-user```
+
+Podemos barrar a autenticacao do user passando a flag `-l` ou `--lock`.
+
+Para expirar a senha do user basta passar a flag `-e`.
+
+Para deletar a senha do user usamos `-d`.
+
+
+## Grupos
+
 Para criar um grupo de users usamos o comando `groupadd` ou `addgroup`.
 
 > ```groupadd novogrupcato```
@@ -48,17 +67,7 @@ Para remover um grupo usamos o comando `delgroup` ou `groupdel`:
 
 > ```groupdel nome-grupo```
 
-
-Para definir a senha de um user usamos o comando `passwd`:
-
-> ```passwd nome-do-user```
-
-Podemos barrar a autenticacao do user passando a flag `-l` ou `--lock`.
-
-Para expirar a senha do user basta passar a flag `-e`.
-
-Para deletar a senha do user usamos `-d`.
-
+Assim como nos usuários podemos alterar as informações de grupos já criados usando o comando `groupmod`.
 
 Para definir a senha para um grupo usamos o comando `gpasswd`:
 
@@ -72,6 +81,8 @@ Para adicionar um administrador de um grupo usamos a flag `-A` do comando `gpass
 
 > ```gpasswd -A nome-do-user nome-do-grupo```
 
+Para adicionar um usuário em um grupo somente durante uma sessão usamos o comando `newgrp -`.
+
 Podemos verificar se um user é admin de um grupo olhando o arquivo /etc/gshadow. O arquivo tem a seguinte formatação:
 
 [nome-grupo] : [hash-senha] : [nome-admin] : [nome-users]
@@ -81,9 +92,13 @@ Para remover um usuário de um grupo usamos a flag `-d` do comando `gpasswd`:
 > ```gpasswd -d nome-do-user nome-do-grupo```
 
 
+## Bonus
+
 Para mudar de user basta usar o comando `su`:
 
 > ```su - nome-do-user```
+
+Podemos ver os últimos logins dos usuários chamado `lastlog`, que utiliza o arquivo /var/log/lastlog.
 
 ### Importante
 O user id do usuario admin sera sempre 0.
