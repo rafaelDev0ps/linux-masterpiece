@@ -96,8 +96,9 @@ Um exemplo de binário que possui essa permissão é o comando su que se encontr
 ## `umask`
 Para definir um padrão de permissões para os arquivos usa-se o comando `umask`.
 
+---
 
-### Importante
+## Importante
 
 Um diretório sem a permissão de execução (`x`) não é possivel entrar nele.
 
