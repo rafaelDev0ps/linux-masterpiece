@@ -96,6 +96,24 @@ Um exemplo de binário que possui essa permissão é o comando su que se encontr
 ## `umask`
 Para definir um padrão de permissões para os arquivos usa-se o comando `umask`.
 
+Essa definição funciona atraves de uma subtração do valor do umask pelos octais do chmod. Vejamos um exemplo.
+
+O valor padrao que o Linux colocar para as permissões de arquivo é 0666 enquanto para diretórios é 0777.
+
+``` sh 
+# se o valor de umask for igual a 0002
+# entao o valor padrao das permissoes sera
+0666 - 0002 = 0664
+# logo
+chmod 0664 arquivo.txt
+```
+A mesma coisa funciona para diretorios.
+
+Para alterar o umask fazemos
+``` sh 
+umask 0022
+```
+
 ---
 
 ## Importante
