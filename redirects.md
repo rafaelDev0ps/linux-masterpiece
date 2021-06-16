@@ -63,3 +63,13 @@ ls dir_nao_existente dir_existente > saida_erro.txt 2>&1
 ```
 
 Nesse caso, o exemplo acima esta tratando o erro para ser observado pelo file descriptor 1 (STDOUT). E com isso tanto saídas de erro quanto saídas de sucesso serão gravadas.
+
+## Pipe `|`
+
+Quando usamos pipe trabalhamos com as saidas dos comandos.
+
+``` sh 
+# a saida do comando ls servira de entrada para o comando tee.
+ls | tee arquivo.txt
+```
+
