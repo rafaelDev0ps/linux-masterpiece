@@ -48,3 +48,20 @@ Para verificar se há um problema no pacote
 ``` sh
 dpkg -C nome-do-pacote
 ```
+
+## Aptitude (apt)
+Utiliza uma lista de repositórios para o dpkg instalar o pacote desejado.
+
+``` sh
+apt-get install <nome-do-pacote> # instala pacote
+apt-get update # atualiza a lista de repositórios
+apt-get purge <nome-do-pacote> # remove pacote à força
+apt-get auto-remove # remove pacotes inutilizados
+apt-get upgrade # atualiza toda a distribuição
+apt-key add <chave> # verifica chave do repositório desejado
+apt-get clean # limpa arquivos deb usados pela instalação
+```
+
+A lista de repositório se localiza no diretório `/etc/apt/source.list`. Os repositórios que não fazem parte da distribuição devem ser colocados no diretório `/etc/apt/source.list.d`.
+
+Os arquivos baixados e instalados pelo apt são salvos no diretório `/var/cache/apt/archives`
