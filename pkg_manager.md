@@ -74,7 +74,7 @@ sudo apt-get install -y nome-do-pacote
 ```
 
 ## Redhat Package Manager (rpm) 
-Gerenciador de pacotes da Redhat. Faz uma analogia ao dpkg das distribuições Debian.
+Gerenciador de pacotes da Redhat como CentOS por exemplo. Faz uma analogia ao dpkg das distribuições Debian.
 
 ``` sh
 rpm -i nome-do-pacote.rpm # instala o pacote
