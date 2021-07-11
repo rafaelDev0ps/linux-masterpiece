@@ -9,7 +9,7 @@ Com base na distribuição podemos saber qual gerenciador de pacotes padrão. Co
 | Distribuição | PKG Manager |
 | --- | --- |
 | Debian | dpkg e apt |
-|  |  |
+| Redhat | yum e dnf |
 
 ## Diferença entre dpkg & apt
 A diferença entre o dpkg e apt é que no dpkg o pacote com extensão `.deb` além disso ele não resolve dependências. Já o apt consegue fazer o download do pacote buscando nos repositórios conhecidos pela sua máquina e consegue resolver as dependências do pacote.
