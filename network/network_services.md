@@ -6,7 +6,7 @@ Eh um programa instalado na maquina que fica escutando uma determinada porta par
 - FTP na porta 21
 - SMTP na porta 25
 - POP na porta 110
-- IMAP na porta1443
+- IMAP na porta 1443
   
 Esses servicos podem ser executados como deamons (ativo o tempo todo em memoria) ou inetd (chama o binario apenas quando necessario).  
   
@@ -44,7 +44,7 @@ Podemos atraves desse arquivo executar binarios via rede!
 
 ```vim
 <num-da-porta> <tipo-socket> <protocolo> <flag> <user> <caminho-do-arquivo>
-8081 stream tcp wait nobody.tty ~/home/meu-executavel
+8081 stream tcp wait nobody ~/home/meu-executavel
 ```  
   
 Depois devemos dar umrestart no servico.  

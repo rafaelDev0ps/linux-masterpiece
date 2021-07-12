@@ -12,8 +12,8 @@ Existe um padrão de protocolos que facilita a comunicação entre os hosts. Par
 ## Topologias
 Como as redes são organizadas geograficamente.
 
-1. (Ethernet)[https://pt.wikipedia.org/wiki/Ethernet]
-2. (Token Ring)[https://en.wikipedia.org/wiki/Token_Ring]
-3. (FDDI)[https://pt.wikipedia.org/wiki/Fiber_Distributed_Data_Interface]
-4. (Estrela)[https://pt.wikipedia.org/wiki/Fiber_Distributed_Data_Interface]
+1. [Ethernet](https://pt.wikipedia.org/wiki/Ethernet)
+2. [Token Ring](https://en.wikipedia.org/wiki/Token_Ring)
+3. [FDDI](https://pt.wikipedia.org/wiki/Fiber_Distributed_Data_Interface)
+4. [Estrela](https://pt.wikipedia.org/wiki/Fiber_Distributed_Data_Interface)
 
