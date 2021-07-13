@@ -71,3 +71,22 @@ _Para saber qual user esta em qual terminal da maquina usamos o comando `w`._
   
 *Como faco para enviar mensagens para todos os usuarios logados na maquina?*  
 Use o comando `echo "Mensagem para todos" | wall`
+
+## `df`
+Mostra espaco em disco
+  
+## `free`
+Mostra o uso de memoria.
+  
+## `top`
+Lista os processos sendo executados.  
+  
+## Servidor web inoperante
+Fique atento a gravacao de logs, geralmente servidores web como Apache e Nginx param suas operacoes quando o espaco de armazenamento de logs nao eh suficiente.  
+
+## Servidor Web Lento
+Pode ser processos que estajam utilizando CPU demais, causando um load alto.  
+  
+As vezes o problema nao pode estar na maquina e sim na rede. Podemos utilizar a ferramenta `dmesg` para visualizar os logs de conexao. Verifique a comunicacao de rede fisica, cabos, switches, roteadores.  
+  
+Em caso de brute-force podemos rejeitar chamadas de hosts maliciosos. Para isso podemos configurar o firewall da maquina.  
