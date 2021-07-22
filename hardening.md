@@ -1,5 +1,5 @@
 ## Hardening
-Hardening é uma maneira de melhorar o sistema operacional em termos de segurança.
+Hardening é uma maneira de melhorar o sistema operacional em termos de segurança. Tudo o que possui uma camada de restricao na maquina pode ser considerado como hardening.
   
 ### Complexidade de Senhas
 Aumentar o tamanho das senhas através do `libpam-cracklib`.  
@@ -61,3 +61,75 @@ Number of days of warning before password expires	: 7
   
 Para mais infos use o comando `passwd --help`.  
 
+## `/etc/login.defs`
+Arquivo responsavel pelas definicoes de logins da maquina. Podemos definir as regras de definicao de senha dos usuarios nesse arquivo (exp. de senhas, min e max de dias para alterar senha, etc).
+
+## Desativando Servicos desnecessarios
+Podemos remover os servicos de rede que nao estao sendo utilizados pela maquina, com isso deixamos a maquina com menos portas abertas tornando-a mais segura.  
+Alem disso podemos alterar as configuracoes padrao de acesso SSH no arquivo `/etc/ssh/sshd_config`.  
+
+## Update de seguranca
+Podemos fazer uma auditoria dos pacotes instalados na maquina. Para listar todos os pacotes instalados na maquina usamos o comando:  
+``` sh
+dpkg -l
+```
+  
+Podemos configurar o arquivo de updates de seguranca chamado `/etc/apt/source.list`, nele encontramos os repositorios resposaveis pelos pacotes de seguranca.  
+```vim
+deb http://security.ubuntu.com/ubuntu focal-security main restricted
+# deb-src http://security.ubuntu.com/ubuntu focal-security main restricted
+deb http://security.ubuntu.com/ubuntu focal-security universe
+# deb-src http://security.ubuntu.com/ubuntu focal-security universe
+deb http://security.ubuntu.com/ubuntu focal-security multiverse
+# deb-src http://security.ubuntu.com/ubuntu focal-security multiverse
+```  
+  
+Para fazer o download e instalacao desses pacotes fazemos:  
+```sh
+sudo apt-get update
+sudo apt-get update -f -u
+reboot
+```  
+  
+Tenha o habito de ter um backup da lista de pacotes que estao instalados na sua maquina!  
+```sh
+dpkg --get-selections | tee pacotes-instalados-07-2021.txt
+```  
+  
+Podemos fazer um `diff` dos arquivos de lista de pacotes depois:  
+```sh
+diff lista1.txt lista2.txt
+```  
+  
+## SUID e SGID
+Podemos conferir quais arquivos binarios os usuarios podem ter acesso atraves do grupo que estao:  
+```sh 
+find . -perm /4000
+```  
+  
+## ulimit
+Podemos listar os limites de um user durante a sessao dele.  
+```sh
+ulimit -a
+```  
+  
+Encontramos informacoes dos limites dos usuarios na sessao atraves do arquivo `/etc/security/limits.conf` listando o que significa cada restricao.  
+  
+```vim 
+#<domain>      <type>  <item>         <value>
+root            hard    nofile        1000000
+```  
+No exemplo acima o usuario root pode ter mais de um milhao de arquivos abertos na sua sessao.  
+Caso queiramos estabelecer essa regra para um grupo basta colocar um `@nome-grupo` no dominio.  
+```vim 
+#<domain>      <type>  <item>         <value>
+@meugrupo            hard    nofile        1000000
+```  
+  
+## Monitoramento de logs
+Podemos monitorar logs em tempo real usando a flag `-f` do `tail`.  
+```sh
+tail -f /var/log/auth.log   # logs de acesso
+tail -f /var/log/daemon.log  # para programas que estao rodando como daemon
+lastlog  # verifica quais user fizeram acesso a maquina
+```  
