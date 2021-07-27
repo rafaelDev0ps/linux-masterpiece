@@ -21,6 +21,7 @@ As permissões são divididas em 4 partes.
 - `b` dispositivo de bloco
 - `s` socket
 - `d` diretorios
+- `c` dispositivos de caractere
 
 #### O que significa cada letra?
 
@@ -59,7 +60,7 @@ chmod a=rw nome_arquivo # definindo permissão de leitura, escrita e deleção p
 ```
 
 ### stick bit
-Podemos adicionar stick bit nos diretórios usando o número 1 antes do octal das permissões.
+Podemos adicionar stick bit nos diretórios usando o número 1 antes do octal das permissões. Quando adicionamos stickbit em um diretório somente o dono desse diretorio pode remover arquivos de dentro dele.
 
 ``` sh
 chmod 1755 nome_do_diretorio/
