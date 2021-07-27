@@ -24,5 +24,10 @@ Alguns comandos com a mesma funcionalidade do SystemV sao:
   
 No diretorio `/etc/systemd/system` encontramos as definicoes de como os servicos instalados na maquina devem ser inicializados.
   
+Para verificar se um servico esta ativo usamos o comando  
+```sh
+systemctl is-active sshd
+```
+    
 ## Importante
 Para verificar em qual runlevel a maquina esta basta utilizar o comando `runlevel`. 
