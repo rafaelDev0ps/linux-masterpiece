@@ -19,7 +19,7 @@ Cada arquivo markdown corresponde a um tópico sobre o sistema.
 - [Troubleshooting](./throubleshooting.md)
 - [Gerenciador de Pacotes](./pkg_manager.md)
 - [LVM](./lvm.md)
-- [Redes](./network/basics.md)
+- [Redes](./network/README.md)
 - [Hardening](./hardening.md)
 - [Compactação de Arquivos](./compact_files.md)
 
