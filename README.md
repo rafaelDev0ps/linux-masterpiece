@@ -23,5 +23,5 @@ Cada arquivo markdown corresponde a um tópico sobre o sistema.
 - [Hardening](./hardening.md)
 - [Compactação de Arquivos](./compact_files.md)
 - [GRUB](./grub.md)  
-  
+- [Discos e Partições](./disk&partition.md)  
 work in progress...
