@@ -25,4 +25,5 @@ Cada arquivo markdown corresponde a um tópico sobre o sistema.
 - [GRUB](./grub.md)  
 - [Discos e Partições](./disk&partition.md)  
 - [Cronjobs](./cronjobs.md)  
+- [SSH](./ssh.md)  
 work in progress...
