@@ -1,6 +1,4 @@
-# 🐧 LINUX MASTERPIECE 🐧
-
-Repositório para estudo sobre o sistema operacional Linux.
+# 🐧 ADMINISTRADOR LINUX 🐧
 
 Cada arquivo markdown corresponde a um tópico sobre o sistema.
 
