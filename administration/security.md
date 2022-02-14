@@ -1,4 +1,4 @@
-## Seguranca
+máquinavocêapósé## Seguranca
 _Como definir o acesso de usuarios em uma maquina?_  
 Podemos usar o arquivo de configuracao chamado `/etc/securetty`. Esse arquivo lista os terminais que o usuario root tem permissao para executar.  
   

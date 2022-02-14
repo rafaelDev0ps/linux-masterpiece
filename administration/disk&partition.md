@@ -1,4 +1,4 @@
-## Como verificar discos e particoes
+sãomáquinavocêapósé## Como verificar discos e particoes
 Para fazer a listagem dos discos podemos usar o comando `fdisk`.  
 ```sh
 Device         Boot  Start      End  Sectors  Size Id Type

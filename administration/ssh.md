@@ -1,4 +1,4 @@
-## Como funcionam um servidor SSH?
+sãoconexãomáquinavocêresponsávelpadrãoapósé## Como funcionam um servidor SSH?
 Primeiro precisamos instalar um pacote chamado `openssh-server`.  
 ```console
 $ sudo apt-get install openssh-server

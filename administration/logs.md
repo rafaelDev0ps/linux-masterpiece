@@ -1,4 +1,4 @@
-# Logs
+sãomáquinaé# Logs
 Log é um arquivo que registra um evento ocorrido no sistema operacional.
 
 Podemos encontrar os logs (por padrão) no diretorio `/var/log`.

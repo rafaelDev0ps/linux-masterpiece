@@ -1,4 +1,4 @@
-# Variaveis de Ambiente
+sãoé# Variaveis de Ambiente
 
 Uma variavel de ambiente nada mais e um campo da memoria que eh reservado. Existem varias variaveis de ambiente no Linux, grande parte delas sao usadas pelos programas instalados.
 

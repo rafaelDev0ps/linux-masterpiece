@@ -1,4 +1,4 @@
-# Redes
+sãoconexãopadrão# Redes
 
 Quando existe uma conexao mutua entre varios computadores podemos chamar de rede, cada computador possui um endereco (um host). Esses host se comunicam atraves de um protocolo em comum que serve de regra para que a comunicacao funcione.
 

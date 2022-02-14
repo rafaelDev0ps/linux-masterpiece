@@ -1,4 +1,4 @@
-# Redirecionadores
+padrão# Redirecionadores
 
 Os redirecionadores são compostos por file descriptors, cada um possui um valor:
 

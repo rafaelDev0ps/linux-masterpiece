@@ -1,4 +1,4 @@
-# Onde pedir ajuda no Linux?
+você# Onde pedir ajuda no Linux?
 
 Podemos usar as páginas dos manuais.
 

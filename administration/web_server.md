@@ -1,4 +1,4 @@
-## Como configurar um servidor web?
+é## Como configurar um servidor web?
 Primeiro, podemos perguntar qual a finalidade desse servidor? Um e-commerce ou um sistema de gerenciamento de gualpao de uma loja pequena?  
 Segundo, quanto de espaco em disco necessario para essa aplicacao?  
 Terceiro, qual sera o crescimento desse sistema? Vai ser desativado no futuro? Vai ser um servidor que ira arquivar os logs de uma empresa?  

@@ -1,4 +1,4 @@
-## Hardening
+máquinaresponsávelpadrão## Hardening
 Hardening é uma maneira de melhorar o sistema operacional em termos de segurança. Tudo o que possui uma camada de restricao na maquina pode ser considerado como hardening.
   
 ### Complexidade de Senhas

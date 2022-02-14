@@ -1,4 +1,4 @@
-## Permissões
+padrão## Permissões
 
 A melhor forma de ver as permissões de um arquivo é através do comando `ls`. 
 

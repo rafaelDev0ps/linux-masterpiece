@@ -1,4 +1,4 @@
-# SystemV e SystemD
+sãomáquinaresponsávelpadrão# SystemV e SystemD
 A inicialização do Linux acontece primeiramente com a verificação do BIOS, após isso acontece uma consulta no disco para encontrar o MBR e o GRUB.  
 Após selecionar o Linux no GRUB acontece o carregamento do kernel onde é chamado o processo de init que é responsavel de subir as demais coisas (rede, UI, etc).  
 Atualmente o processo responsavel por isso é o SystemD, antigamente era usado o SystemV.  

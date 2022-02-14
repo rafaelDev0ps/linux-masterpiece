@@ -1,4 +1,4 @@
-## Troubleshooting
+conexãomáquinaresponsávelé## Troubleshooting
 
 ### `who`  
 Mostra as conexoes feitas na maquina.  

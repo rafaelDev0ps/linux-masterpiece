@@ -1,4 +1,4 @@
-# O Kernel
+sãomáquinavocêresponsável# O Kernel
 O nucleo do SO, faz o controle dos recursos da maquina e responsavel por fazer ponte entre o usuario e o hardware.  
    
 No Linux tambem existem drivers, sao chamados de modulos.  
